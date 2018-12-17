@@ -1,0 +1,132 @@
+body{
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Fjalla One", sans-serif;
+}
+
+h2{
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.header, .hero, .footer{
+  background-color: #1D252C;
+}
+.portafolio, .experiencia{
+  background-color: #FAFAFA;
+}
+
+.contacto{
+  background-color: #026FFF;
+}
+
+.header, .hero, .footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.portafolio, .experiencia h2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.experiencia div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex-direction: row; */
+}
+
+.experiencia_fig{
+  margin: 0 auto;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.experiencia_fig img{
+  width: 520px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.experiencia_info{
+  margin: 50px;
+  margin-top: -50px;
+  background-color: white;
+  position: relative;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 15px;
+  /* display: flex; */
+  /* width: 420px; */
+}
+
+.experiencia_content{
+  border: 1px solid red;
+  background-color: #F4FBFF;
+  width: 520px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.experiencia h2{
+  margin: 0px;
+}
+
+.form_container p{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.experiencia_info h3, .experiencia_info p{
+  text-align: center;
+}
+
+.contacto{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
+
+.twitter{
+  background-image: url(../images/svg/twitter-logo.svg);
+}
+
+.facebook{
+  background-image: url(../images/svg/facebook-logo.svg);
+}
+
+.github{
+  background-image: url(../images/svg/github-logo.svg);
+}
+
+.instagram{
+  background-image: url(../images/svg/instagram-logo.svg);
+}
