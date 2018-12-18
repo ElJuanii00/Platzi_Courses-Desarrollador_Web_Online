@@ -1,26 +1,35 @@
+                  /* Fuentes */
+
 body{
   margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
 }
 
-h2{
-  text-transform: uppercase;
+.contacto h3 {
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  color: white;
 }
+
+                    /* Color de background */
 
 .header, .hero, .footer{
-  background-color: #1D252C;
+  background-color: #1b2127;
 }
 .portafolio, .experiencia{
   background-color: #FAFAFA;
 }
 
 .contacto{
-  background-color: #026FFF;
+  background-color: #056fff;
 }
+
+                    /* Flex */
 
 .header, .hero, .footer{
   display: flex;
@@ -30,8 +39,7 @@ h2{
   flex-direction: row;
 }
 
-
-.portafolio, .experiencia h2{
+.portafolio{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,73 +47,214 @@ h2{
   flex-direction: column;
 }
 
-.contacto{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-}
-
-.experiencia div{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* flex-direction: row; */
-}
-
-.experiencia_fig{
+.container{
+  width: 1000px;
   margin: 0 auto;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  display: inherit;
+  flex-wrap: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: inherit;
 }
 
-.experiencia_fig img{
-  width: 520px;
-  height: 250px;
+                  /* Header */
+
+.header_fig{
+  margin: 0px;
+  width: 270px;
+  height: 90px;
+}
+
+.header_fig a{
+  width: 270px;
+  height: 90px;
+  display: inline-block;
+  background-image: url(../images/logo.png);
+  background-size: 270px 90px;
+}
+
+.header_nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0px;
+}
+.nav{
+  padding: 10px;
+  /* margin: 0px 25px; */
+}
+
+.nav a{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+                    /* Hero */
+
+.hero h1{
+  margin: 0px;
+  color: white;
+  font-size: 40px;
+  line-height: 60px;
+}
+.hero h1 strong{
+  color: #056fff;
+}
+
+.hero img{
+  margin: 0px;
   object-fit: cover;
 }
+                    /* Portafolio */
 
-.experiencia_info{
-  margin: 50px;
-  margin-top: -50px;
+.portafolio_container{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  flex-direction: row;
   background-color: white;
-  position: relative;
-  flex-direction: column;
   border: 1px solid black;
-  border-radius: 15px;
-  /* display: flex; */
-  /* width: 420px; */
-}
-
-.experiencia_content{
-  border: 1px solid red;
-  background-color: #F4FBFF;
-  width: 520px;
   border-radius: 10px;
-  overflow: hidden;
-  flex-shrink: 0;
-  /* display: flex;
-  flex-direction: column; */
+  padding: 20px;
+  margin: 5px 0px;
 }
 
-.experiencia h2{
-  margin: 0px;
+.portafolio_project, .portafolio_img{
+  width: 500px;
+  margin: 0 auto;
 }
 
-.form_container p{
-  text-transform: uppercase;
-  font-weight: bold;
+.portafolio_project, .portafolio_img{
+  display: flex;
+  vertical-align: middle;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.experiencia_info h3, .experiencia_info p{
+.portafolio_project h3{
+  font-size: 30px;
+  margin: 0px 0px 10px 0px;
+}
+
+.portafolio_project h6, .portafolio_project_fecha, .portafolio_project_video{
+  margin: 5px 0px;
+}
+
+
+.portafolio_project_fecha strong, .portafolio_project_video strong{
+  font-family: "Fjalla One", sans-serif;
+}
+
+.portafolio_project_msg{
+  font-size: 20px;
+}
+
+                    /* Experiencia */
+
+.experiencia{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.experiencia_title{
   text-align: center;
 }
 
+.experiencia_container{
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: white; */
+}
+
+.experiencia_fig img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.experiencia_fig{
+  margin: 0 auto;
+}
+
+.experiencia_content{
+  width: 480px;
+  background-color: #f4fbff;
+  border-radius: 10px;
+  /* border: 1px solid; */
+  overflow: hidden;
+  margin: 10px;
+}
+
+.experiencia_info{
+  margin: 20px 40px;
+  margin-top: -40px;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+
+.experiencia_info p{
+  text-align: left;
+}
+
+.experiencia_info a{
+  color: #056fff;
+  background-color: transparent;
+  padding: 5px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+                    /* Contacto */
+
 .contacto{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form_name, .form_email{
+  padding: 10px 20px 10px 25px;
+  background-position: left;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  margin: 5px 0px;
+}
+
+.form_name{
+  background-image: url(../images/svg/profile.svg);
+}
+
+.form_email{
+  background-image: url(../images/svg/envelope.svg);
+}
+
+.form_button{
+  margin: 10px 0px;
+  width: 100px;
+  padding: 10px 0px;
+  color: white;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: gray;
+  border-style: solid;
 }
 
 .social-link{
@@ -113,6 +262,7 @@ h2{
   width: 50px;
   height: 50px;
   background-size: 50px 50px;
+  margin: 20px;
 }
 
 .twitter{
@@ -129,4 +279,27 @@ h2{
 
 .instagram{
   background-image: url(../images/svg/instagram-logo.svg);
+}
+
+                    /* Footer */
+
+.footer{
+  color: white;
+}
+
+.footer p img{
+  vertical-align: middle;
+}
+
+.footer p a{
+  color: white;
+  text-decoration: none;
+}
+
+.thanks{
+  text-align: right;
+}
+
+.author_link{
+  color: #056fff !important;
 }
