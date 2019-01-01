@@ -3,13 +3,18 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"> -->
     <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro"
      rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+    </style>
     <title>Desarrollo Web</title>
   </head>
   <body>
     <!-- header -->
+    <i class="icon-menu burger_buttom" id="burger-menu"></i>
     <header class="header">
       <div class="container">
         <div class="header_fig">
@@ -17,13 +22,13 @@
         </div>
         <ol class="header_nav">
           <li class="nav">
-            <a href="#Portafolio">Portafolio</a>
+            <a class="link" href="#Portafolio">Portafolio</a>
           </li>
           <li class="nav">
-            <a href="#Experiencia">Experiencia</a>
+            <a class="link" href="#Experiencia">Experiencia</a>
           </li>
           <li class="nav">
-            <a href="#Contacto">Trabajemos Juntos</a>
+            <a class="link" href="#Contacto">Trabajemos Juntos</a>
           </li>
         </ol>
       </div>
@@ -53,12 +58,12 @@
               este proyecto ha sido el ejemplo de futuros creadores de aplicaciones
               multiplataforma</p>
             </div>
-            <figure class="portafolio_img">
+          <figure class="portafolio_img">
               <img src="images/platzi-video-react-native.png" alt="platzi-video-react-native.png"
               width="500px">
-            </figure>
+          </figure>
           </div>
-          <div class="portafolio_container">
+        <div class="portafolio_container">
             <div class="portafolio_project">
               <h3>Platzi Video</h3>
               <h6>React Native/ React</h6>
@@ -70,30 +75,30 @@
                 Desde crear un vista-detalle, hasta patrones avanzados de navegación,
                 este proyecto ha sido el ejemplo de futuros creadores de aplicaciones
                 multiplataforma</p>
-              </div>
-              <figure class="portafolio_img">
+            </div>
+            <figure class="portafolio_img">
                 <img src="images/platzi-video-react-native.png" alt="platzi-video-react-native.png"
                 width="500px">
-              </figure>
+            </figure>
+          </div>
+        <div class="portafolio_container">
+            <div class="portafolio_project">
+              <h3>Platzi Video</h3>
+              <h6>React Native/ React</h6>
+              <p class="portafolio_project_fecha"><strong><small>Fecha: </strong>01/07/2018</small></p>
+              <p class="portafolio_project_video"><strong><small>Puedes verlo en:
+              </strong><a href="https://www.platzi.com/native" target="_blank">www.platzi.com/native</a></small></p>
+              <p class="portafolio_project_msg">Platzi Video fue el resultado de 3 meses de trabajo para crear la
+                mejor app para enseñar el funcionamiento de React y React Native.
+                Desde crear un vista-detalle, hasta patrones avanzados de navegación,
+                este proyecto ha sido el ejemplo de futuros creadores de aplicaciones
+                multiplataforma</p>
             </div>
-            <div class="portafolio_container">
-        <div class="portafolio_project">
-          <h3>Platzi Video</h3>
-          <h6>React Native/ React</h6>
-          <p class="portafolio_project_fecha"><strong><small>Fecha: </strong>01/07/2018</small></p>
-          <p class="portafolio_project_video"><strong><small>Puedes verlo en:
-          </strong><a href="https://www.platzi.com/native" target="_blank">www.platzi.com/native</a></small></p>
-          <p class="portafolio_project_msg">Platzi Video fue el resultado de 3 meses de trabajo para crear la
-            mejor app para enseñar el funcionamiento de React y React Native.
-            Desde crear un vista-detalle, hasta patrones avanzados de navegación,
-            este proyecto ha sido el ejemplo de futuros creadores de aplicaciones
-            multiplataforma</p>
-        </div>
-        <figure class="portafolio_img">
-          <img src="images/platzi-video-react-native.png" alt="platzi-video-react-native.png"
-          width="500px">
-        </figure>
-      </div>
+            <figure class="portafolio_img">
+              <img src="images/platzi-video-react-native.png" alt="platzi-video-react-native.png"
+              width="500px">
+            </figure>
+          </div>
       </div>
     </section>
     <!-- experiencia -->
@@ -101,55 +106,59 @@
       <div class="container">
         <h2 class="experiencia_title">Experiencia</h2>
         <div class="experiencia_container">
-        <article class="experiencia_content">
-          <figure class="experiencia_fig">
-            <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x">
-          </figure>
-          <div class="experiencia_info">
-            <h3>PlatziConf Mexico 2018</h3>
-            <p>El evento más grande sobre gente que quiere aprender más de
-               internet. En este evento te comparto cómo tener una vida de constante
-               aprendizaje.</p>
-            <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
-          </div>
-        </article>
-        <article class="experiencia_content">
-          <figure class="experiencia_fig">
-            <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x">
-          </figure>
-          <div class="experiencia_info">
-            <h3>PlatziConf Mexico 2018</h3>
-            <p>El evento más grande sobre gente que quiere aprender más de
-               internet. En este evento te comparto cómo tener una vida de constante
-               aprendizaje.</p>
-            <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
-          </div>
-        </article>
-        <article class="experiencia_content">
-          <figure class="experiencia_fig">
-            <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x">
-          </figure>
-          <div class="experiencia_info">
-            <h3>PlatziConf Mexico 2018</h3>
-            <p>El evento más grande sobre gente que quiere aprender más de
-               internet. En este evento te comparto cómo tener una vida de constante
-               aprendizaje.</p>
-            <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
-          </div>
-        </article>
-        <article class="experiencia_content">
-          <figure class="experiencia_fig">
-            <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x">
-          </figure>
-          <div class="experiencia_info">
-            <h3>PlatziConf Mexico 2018</h3>
-            <p>El evento más grande sobre gente que quiere aprender más de
-               internet. En este evento te comparto cómo tener una vida de constante
-               aprendizaje.</p>
-            <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
-          </div>
-        </article>
-      </div>
+          <article class="experiencia_content">
+            <figure class="experiencia_fig">
+              <video class="html_video" src="videos/f9.mp4" width="1280px" height="720px" controls></video>
+              <!-- <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x"> -->
+            </figure>
+            <div class="experiencia_info">
+              <h3>PlatziConf Mexico 2018</h3>
+              <p>El evento más grande sobre gente que quiere aprender más de
+                 internet. En este evento te comparto cómo tener una vida de constante
+                 aprendizaje.</p>
+              <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
+            </div>
+          </article>
+          <article class="experiencia_content">
+            <figure class="experiencia_fig">
+              <div class="flexible_video">
+                <iframe class="youtube_video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <!-- <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x"> -->
+            </figure>
+            <div class="experiencia_info">
+              <h3>PlatziConf Mexico 2018</h3>
+              <p>El evento más grande sobre gente que quiere aprender más de
+                 internet. En este evento te comparto cómo tener una vida de constante
+                 aprendizaje.</p>
+              <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
+            </div>
+          </article>
+          <article class="experiencia_content">
+            <figure class="experiencia_fig">
+              <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x">
+            </figure>
+            <div class="experiencia_info">
+              <h3>PlatziConf Mexico 2018</h3>
+              <p>El evento más grande sobre gente que quiere aprender más de
+                 internet. En este evento te comparto cómo tener una vida de constante
+                 aprendizaje.</p>
+              <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
+            </div>
+          </article>
+          <article class="experiencia_content">
+            <figure class="experiencia_fig">
+              <img src="images/platzi-conf.jpg" alt="patzi-conf.png" width="600px" height="400x">
+            </figure>
+            <div class="experiencia_info">
+              <h3>PlatziConf Mexico 2018</h3>
+              <p>El evento más grande sobre gente que quiere aprender más de
+                 internet. En este evento te comparto cómo tener una vida de constante
+                 aprendizaje.</p>
+              <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Platica</a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <!-- contacto -->
@@ -162,24 +171,58 @@
         <input class="form_button" type="submit" name="enviar" value="Enviar">
       </form>
         <div class="social_container">
-        <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a>
-        <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a>
-        <a href="https://github.com/leonidasesteban" class="social-link github"></a>
-        <a href="https://instagram.com/leonidasesteban" class="social-link instagram"></a>
-      </div>
+          <a href="https://twitter.com/leonidasesteban" class="social-link icon-twitter"></a>
+          <a href="https://facebook.com/leonidas.esteban" class="social-link icon-facebook2"></a>
+          <a href="https://github.com/leonidasesteban" class="social-link icon-github"></a>
+          <a href="https://instagram.com/leonidasesteban" class="social-link icon-instagram"></a>
+        </div>
       </div>
     </section>
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <p>Desarrollo Web Online <img src="images/platzi.png" alt="https://platzi.com"
+        <p class="title_footer">Desarrollo Web Online <img src="images/platzi.png" alt="https://platzi.com"
           width="80px"></p>
-        <p class="thanks">Designed with <\3 by <a class="author_link" href="https://www.twitter.com/thespianartist" target="_blank">@thespianartist</a>
+        <p class="thanks">Designed with <strong class="hearth">❤</strong> by <a class="author_link" href="https://www.twitter.com/thespianartist" target="_blank">@thespianartist</a>
           <br> Icons made by <a class="author_link" href="https://www.flaticon.com/authors/dave-gandy" target="_blank">Dave Gandy</a>,
           <a class="author_link" href="https://www.flaticon.com/authors/pixel-perfect" target="_blank">Pixel Perfect</a>,
-          <a class="author_link" href="https://www.flaticon.com/authors/simpleicon" target="_blank">SimpleIcon</a>,
+          <a class="author_link" href="https://www.flaticon.com/authors/simpleicon" target="_blank">SimpleIcon</a> and
           <a class="author_link" href="https://www.flaticon.com/authors/lucy-g" target="_blank">Lucy G</a> from www.flaticon.com</p>
       </div>
     </footer>
+    <script>
+      // console.log("Hola mundo! mi primera linea en JS")
+      const ipad = window.matchMedia('screen and (max-width: 768px)');
+      const menu = document.querySelector('.header_nav');
+      // console.log(menu);
+      const burgerButton =  document.querySelector('#burger-menu');
+      // console.log(burgerButton);
+      const links = document.querySelectorAll('.link');
+
+      ipad.addListener(validation)
+      function validation(event){
+        if(event.matches){
+          burgerButton.addEventListener('click', hideShow )
+          Array.from(links).forEach( link=> {
+          link.addEventListener('click',hideShow)
+        })
+        } else {
+          burgerButton.removeEventListener('click', hideShow )
+        }
+        console.log(event.matches);
+      }
+
+      validation(ipad);
+
+      function hideShow(){
+        if (menu.classList.contains("is-active")){
+            menu.classList.remove('is-active');
+        }else {
+          menu.classList.add('is-active');
+        }
+      }
+
+
+    </script>
   </body>
 </html>
